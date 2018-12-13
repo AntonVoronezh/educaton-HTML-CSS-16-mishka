@@ -1,2 +1,2 @@
-# educaton-HTML-CSS-16-mishka
-educaton-HTML-CSS-15-mishka
+# educaton-HTML-CSS-16(mishka)
+practical HTML5 &bCSS3 from HTMLAcademy.ru
