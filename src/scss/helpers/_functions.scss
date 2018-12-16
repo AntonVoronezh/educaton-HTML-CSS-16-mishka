@@ -1,6 +1,4 @@
-// colors
-$orange: #e45028;
-$black: #2f3234;
-$yellow: #f9b43b;
-// size
-$view-port: 940px;
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}
+

@@ -1,4 +1,4 @@
-$fontsList: lifehack_medium, gagalin-regular, ubuntu-regular;
+$fontsList: Verdana;
 @mixin fontNormal {
     font-weight: normal;
     font-style: normal;
@@ -6,14 +6,26 @@ $fontsList: lifehack_medium, gagalin-regular, ubuntu-regular;
 
 @each $font in $fontsList {
     @font-face {
-    font-family: "#{$font}";
-    src: url('fonts/#{$font}-webfont.woff2');
-    @include fontNormal; 
-       
+        font-family: "#{$font}";
+        src: url('fonts/#{$font}-webfont.woff');
+        @include fontNormal;
     }
 }
 
+@mixin fontBold {
+    font-weight: bold;
+    font-style: normal;
+}
 
+$fontsListBold: Verdana-Bold;
+
+@each $font in $fontsListBold {
+    @font-face {
+        font-family: "#{$font}";
+        src: url('fonts/#{$font}-webfont.woff');
+        @include fontNormal;
+    }
+}
 
 
 // @font-face {
@@ -22,14 +34,12 @@ $fontsList: lifehack_medium, gagalin-regular, ubuntu-regular;
 //     font-weight: normal;
 //     font-style: normal;
 // }
-
 // @font-face {
 //     font-family: 'gagalin-regular';
 //     src: url('gagalin-regular-webfont.woff2');
 //     font-weight: normal;
 //     font-style: normal;
 // }
-
 // @font-face {
 //     font-family: 'ubuntu-regular';
 //     src: url('ubuntu-regular-webfont.woff2');
@@ -43,7 +53,5 @@ $fontsList: lifehack_medium, gagalin-regular, ubuntu-regular;
 //     font-weight: normal;
 //     font-style: normal;
 // } 
-
-
 // <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-// font-family: 'Merriweather', serif; 
+// font-family: 'Merriweather', serif;

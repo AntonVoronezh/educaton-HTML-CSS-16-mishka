@@ -1,3 +1,10 @@
 .wrapper {
-    // background-color: blue;
+    @include center;
+}
+
+.container {
+    max-width: $view-port;
+    width: 100%;
+    // border: 1px solid #000000;
+    
 }
