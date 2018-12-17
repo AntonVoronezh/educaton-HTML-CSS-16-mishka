@@ -1,4 +1,17 @@
 .week {
+// border: 1px solid #000000;
+display: flex;
+margin-top: 50px;
 
-    
+&__left {
+width: 50%;
+
+}
+&__right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    // border: 1px solid #000000;
+}
+
 }
