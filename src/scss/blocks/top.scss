@@ -12,6 +12,9 @@
     height: rem(750px);
     @extend %bg-image;
     background-image: url('../img/decor/hero-desktop.jpg.png');
+    @include phones {
+        background-image: url('../img/decor/hero-mobile.png');
+    }
     &__list {
         display: flex;
         width: 100%;
