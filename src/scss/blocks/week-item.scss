@@ -5,6 +5,11 @@
     position: relative;
     &__left {
         width: 50%;
+        border: 1px solid #000000;
+        margin-top: rem(150px);
+        margin-left: rem(250px);
+        margin-right: rem(80px);
+        color: #444444;
     }
     &__right {
         width: 50%;
@@ -13,10 +18,10 @@
     }
     &__top {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: rem(50px);
+        left: rem(50px);
         right: 0;
-        width: 100%;
+        // width: 100%;
         display: flex;
         align-items: center;
         border: 1px solid #000000;
