@@ -5,23 +5,27 @@
     position: relative;
     &__left {
         width: 50%;
-        border: 1px solid #000000;
-        margin-top: rem(150px);
+        border: 1px solid red;
+        margin-top: rem(200px);
         margin-left: rem(250px);
-        margin-right: rem(80px);
+        margin-right: rem(30px);
         color: #444444;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
     }
     &__right {
-        width: 50%;
+        min-width: 50%;
         display: flex;
-        justify-content: flex-end; // border: 1px solid #000000;
+        justify-content: flex-end;
+        border: 1px solid #000000;
     }
     &__top {
         position: absolute;
-        top: rem(50px);
+        top: rem(75px);
         left: rem(50px);
-        right: 0;
-        // width: 100%;
+        right: 0; // width: 100%;
         display: flex;
         align-items: center;
         border: 1px solid #000000;
@@ -34,7 +38,7 @@
         text-transform: uppercase;
     }
     &__title {
-        margin-left: 50px;
+        margin-left: rem(50px);
         font-size: rem(50px);
         font-weight: 700;
         line-height: rem(57px);
@@ -43,14 +47,21 @@
         color: $black;
     }
     &__list {
+        // margin-top: rem(100px);
         display: table;
     }
     &__item {
+        margin-top: rem(15px);
         display: table-row;
     }
     &__elem {
         display: table-cell;
         text-align: left;
     }
-
+    &__price {
+        font-size: rem(18px);
+        font-weight: 700;
+        line-height: rem(24px);
+        align-self: center;
+    }
 }
