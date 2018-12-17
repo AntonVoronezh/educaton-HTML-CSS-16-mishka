@@ -1,5 +1,5 @@
 // size
-$view-port: 1150px;
+$view-port: 1050px;
 $nav-height: 90px;
 //breackpoints
 $tablets:768px;
@@ -20,8 +20,8 @@ $a-color-visited: darken($a-color, 20%);
 $a-color-focus: $green;
 $a-color-active: darken($grey, 20%);
 //variables of colors class btn
-$btn-background-color: $grey;
-$btn-background-color-hover: darken($btn-background-color, 20%);
-$btn-background-color-visited: $green;
+$btn-background-color: $white;
+$btn-background-color-hover: $green;
+$btn-background-color-visited: darken($btn-background-color, 20%);
 $btn-background-color-focus: $green;
 $btn-background-color-active: darken($btn-background-color, 10%);

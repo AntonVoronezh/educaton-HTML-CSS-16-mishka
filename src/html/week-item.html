@@ -33,7 +33,22 @@
         <button class="btn  btn--week">ЗАКАЗАТЬ</button>
     </div>
     <div class="week__right">
-        <img src="img/product-photo/triple-set-desktop.png" alt="" class="week__img">
+        <!-- <img src="img/product-photo/triple-set-desktop.png" alt="" class="week__img"> -->
+        <!-- triple-set-desktop@1 -->
+        <picture>
+                <source media="(min-width:1050px)" srcset="img/product-photo/desktop/triple-set-desktop@1.png 1x,
+                img/product-photo/desktop/triple-set-desktop@2.png 2x, img/product-photo/desktop/triple-set-desktop@3.png 3x">
+                <source media="(min-width:480px)" srcset="img/product-photo/tablet/triple-set-tablet@1.png 1x,
+                img/product-photo/tablet/triple-set-tablet@2.png 2x, img/product-photo/tablet/triple-set-tablet@3.png 3x">
+                <img class="week__img" alt="фото" src="img/product-photo/desktop/triple-set-desktop@1.png" srcset="img/product-photo/mobile/triple-set-mobile@1.png 1x, 
+                img/product-photo/mobile/triple-set-mobile@2.png 2x, 
+                img/product-photo/mobile/triple-set-mobile@2.png 3x">
+            </picture>
     </div>
-
+    
 </section>
+<!-- <div class="wave-grey"></div> -->
+
+<div class="wave-grey">
+   <div class="subwave-grey"></div>
+ </div>

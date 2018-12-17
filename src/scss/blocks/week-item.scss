@@ -5,11 +5,11 @@
     position: relative;
     &__left {
         width: 50%;
-        border: 1px solid red;
+        // border: 1px solid red;
         margin-top: rem(200px);
         margin-left: rem(250px);
         margin-right: rem(30px);
-        color: #444444;
+        color: #444;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -19,7 +19,7 @@
         min-width: 50%;
         display: flex;
         justify-content: flex-end;
-        border: 1px solid #000000;
+        // border: 1px solid #000000;
     }
     &__top {
         position: absolute;
@@ -28,7 +28,7 @@
         right: 0; // width: 100%;
         display: flex;
         align-items: center;
-        border: 1px solid #000000;
+        // border: 1px solid #000000;
     }
     &__adv {
         color: $green;
@@ -65,3 +65,105 @@
         align-self: center;
     }
 }
+
+// .wave-grey-grey {
+//     margin-top: 100px;
+//     // height: 250px;
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .wave-grey-grey {
+//     background-color: red;
+//     // display: flex;
+// }
+
+// .wave-grey-grey:before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     background-repeat: repeat;
+//     height: rem(20px);
+//     background-size: rem(40px) rem(20px);
+//     background-image: radial-gradient(circle at rem(11px) -6px, transparent rem(12px), $green rem(13px));
+// }
+
+// .wave-grey-grey:after {
+//     content: "";
+//     position: absolute;
+//     background-repeat: repeat;
+//     height: rem(10px);
+//     background-size: rem(40px) rem(10px);
+//     background-image: radial-gradient(circle at rem(25px) rem(13px), $green rem(12px), transparent rem(13px));
+//     left: rem(6px);
+//     bottom: rem(15px);
+// }
+
+// ------------------------------
+
+.wave-grey {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 25px;
+    position: relative;
+    background-color: $body;
+  }
+
+   
+  .wave-grey:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 20px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 11px -6px, transparent 12px, $green 13px);    
+    // background-color: red;
+  }
+  
+  .wave-grey:after{
+    content: "";
+    position: absolute;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 40px 10px;
+    background-image: radial-gradient(circle at 25px 13px, $green 12px, transparent 13px);
+    right: 0;  
+    left: 6px;
+    bottom: 15px;
+    // background-color: red;
+  }
+  .subwave-grey{
+    height: 35px;
+    position: relative;
+    z-index: 2;
+    // background-color: red;
+  }
+  .subwave-grey:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    right: 0;
+    background-repeat: repeat;
+    height: 20px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 11px -6px, $green 12px, $body 13px);    
+  }
+  .subwave-grey:after{
+    content: "";
+    position: absolute;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 40px 10px;
+    background-image: radial-gradient(circle at 25px 13px, $body 12px, $green 13px);
+    right: 0;  
+    left: 6px;
+    bottom: 13px;
+  }
+  

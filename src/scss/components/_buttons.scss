@@ -1,0 +1,10 @@
+.btn {
+    font-size: rem(16px);
+    font-weight: 700;
+    line-height: rem(16px);
+    text-transform: uppercase;
+    border: 2px solid #444;
+    &--week {
+        width: 100%;
+    }
+}
