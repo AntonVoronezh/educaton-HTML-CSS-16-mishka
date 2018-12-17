@@ -39,4 +39,18 @@
         font-weight: 700;
         line-height: rem(57px);
     }
+    &__text {
+        color: $black;
+    }
+    &__list {
+        display: table;
+    }
+    &__item {
+        display: table-row;
+    }
+    &__elem {
+        display: table-cell;
+        text-align: left;
+    }
+
 }
